@@ -1,4 +1,3 @@
-import 'package:banking_app/constants/app_icon.dart';
 import 'package:banking_app/presentation/main/cash_flow/cash_flow_page.dart';
 import 'package:banking_app/presentation/main/home/home_page.dart';
 import 'package:banking_app/presentation/main/main/bloc/main_bloc.dart';
@@ -7,7 +6,6 @@ import 'package:banking_app/presentation/main/services/services_page.dart';
 import 'package:banking_app/presentation/main/transfer/transfer_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_svg/svg.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});

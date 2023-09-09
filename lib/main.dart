@@ -53,7 +53,6 @@ class MyApp extends StatelessWidget {
             /*  localizationsDelegates: context.localizationDelegates,
             supportedLocales: context.supportedLocales,
             locale: context.locale,*/
-            home: SplashPage(),
             builder: EasyLoading.init(),
             initialRoute: RoutesName.splash,
             onGenerateRoute: AppRoutes.onGenerateRoute,

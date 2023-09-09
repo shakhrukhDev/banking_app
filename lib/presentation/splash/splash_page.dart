@@ -6,36 +6,43 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return BlocListener<SplashBloc, SplashState>(
-      listener: (context, state) {
+      listener: (ctx, state) {
         if (state is SplashEnded) {
-          Navigator.pushReplacementNamed(context, state.route);
+          Navigator.popAndPushNamed(context,state.route);
         }
       },
       child: Scaffold(
-          body: Container(
-            decoration:  BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [AppColors.blueColors, AppColors.blueLightColors],
-                  end: Alignment.bottomCenter,
-                  begin: Alignment.topCenter),
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Center(
-                  child: Image.asset(AppImages.splashLogo, width: 120.w, height: 120.h,),
-                ),
-                Text("Cloud Payment", style: AppStyle.poppins24xW500White,)
-              ],
+        body: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [AppColors.blueColors, AppColors.blueLightColors],
+              end: Alignment.bottomCenter,
+              begin: Alignment.topCenter,
             ),
           ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Center(
+                child: Image.asset(
+                  AppImages.splashLogo,
+                  width: 120.w,
+                  height: 120.h,
+                ),
+              ),
+              Text(
+                "Cloud Payment",
+                style: AppStyle.poppins24xW500White,
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
