@@ -51,17 +51,25 @@ class AppStyle {
   );
 
   static TextStyle get poppins14xW400Black => GoogleFonts.poppins(
-    textStyle: const TextStyle(
-      fontSize: 14,
+    textStyle:  TextStyle(
+      fontSize: 14.sp,
       color: AppColors.black,
       fontWeight: FontWeight.w300,
       fontStyle: FontStyle.normal,
     ),
   );
+  static TextStyle get poppins16xW400Black => GoogleFonts.poppins(
+    textStyle:  TextStyle(
+      fontSize: 16.sp,
+      color: AppColors.black,
+      fontWeight: FontWeight.w400,
+      fontStyle: FontStyle.normal,
+    ),
+  );
 
   static TextStyle get poppins16xW300Black => GoogleFonts.poppins(
-    textStyle: const TextStyle(
-      fontSize: 16,
+    textStyle:  TextStyle(
+      fontSize: 16.h,
       color: AppColors.black,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
@@ -69,9 +77,17 @@ class AppStyle {
   );
 
   static TextStyle get poppins20xW400Black => GoogleFonts.poppins(
-    textStyle: const TextStyle(
-      fontSize: 20,
+    textStyle:  TextStyle(
+      fontSize: 20.sp,
       color: AppColors.black,
+      fontWeight: FontWeight.w400,
+      fontStyle: FontStyle.normal,
+    ),
+  );
+  static TextStyle get poppins20xW400White => GoogleFonts.poppins(
+    textStyle:  TextStyle(
+      fontSize: 20.sp,
+      color: AppColors.white,
       fontWeight: FontWeight.w400,
       fontStyle: FontStyle.normal,
     ),

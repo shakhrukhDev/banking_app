@@ -24,6 +24,10 @@ dependencies:
   keyboard_dismisser: ^3.0.0
   flutter_screenutil: ^5.9.0
   cloud_firestore: ^4.9.0
+  flutter_credit_card: ^3.0.7
+  flutter_easyloading: ^3.0.5
+  flutter_locales: ^3.0.1
+  easy_localization: ^3.0.3
 
 dev_dependencies:
   flutter_test:
@@ -38,5 +42,8 @@ flutter:
     - assets/
     - assets/app_images/
     - assets/app_icons/
+    - assets/locales/
+    - assets/locales/
+    - assets/locales/
 
 

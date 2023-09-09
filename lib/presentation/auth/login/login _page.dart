@@ -2,7 +2,6 @@ import 'package:banking_app/constants/app_color.dart';
 import 'package:banking_app/constants/routes/routes_name.dart';
 import 'package:banking_app/constants/widgets/text_styles.dart';
 import 'package:banking_app/presentation/auth/login/bloc/login_bloc.dart';
-import 'package:banking_app/presentation/auth/register/sign_up_page.dart';
 import 'package:banking_app/presentation/main/main/main_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';

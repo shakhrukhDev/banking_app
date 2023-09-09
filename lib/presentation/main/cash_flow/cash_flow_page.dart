@@ -1,3 +1,5 @@
+import 'package:banking_app/constants/app_color.dart';
+import 'package:banking_app/constants/widgets/text_styles.dart';
 import 'package:banking_app/presentation/main/cash_flow/bloc/cash_flow_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -10,7 +12,15 @@ class CashFlowPage extends StatelessWidget {
     return BlocBuilder<CashFlowBloc, CashFlowState>(
       builder: (context, state) {
         return Scaffold(
-          appBar: AppBar(title: Text("Cash Flow Page"),),
+          appBar: AppBar(
+            elevation: 0,
+            backgroundColor:  AppColors.blueColors,
+            title: Text(
+              "Cash Flow",
+              style: AppStyle.poppins20xW400White,
+            ),
+            automaticallyImplyLeading: false,
+          ),
         );
       },
     );
